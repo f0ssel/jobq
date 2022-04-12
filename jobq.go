@@ -18,7 +18,7 @@ type Job interface {
 }
 
 type TicketManager interface {
-	Pull(ctx context.Context, topic ...string) (Ticket, error)
+	Pull(ctx context.Context, topics ...string) (Ticket, error)
 	Update(ctx context.Context, t Ticket) (Ticket, error)
 }
 
